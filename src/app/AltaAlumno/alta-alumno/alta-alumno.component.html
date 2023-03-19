@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="text-center">
+        Formulario Alta de alumno
+    </h1>
+    <div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Nombre</label>
+                <input type="text" class="form-control" #nombre>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label>Ap. Paterno</label>
+                <input type="text" class="form-control" #apPat>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label>Ap. Materno</label>
+                <input type="text" class="form-control" #apMat>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label>Activo</label>
+                <input type="number" class="form-control" #activo>
+            </div>
+        </div>
+        <br>
+        <div class="btn btn-primary btn-xs" (click)="Guardar()">Guardar</div>
+    </div>
+</div>

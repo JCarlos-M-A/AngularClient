@@ -1,0 +1,33 @@
+<p>Alumnos</p>
+
+<div class="container">
+    <hr>
+    <h1 class="text-center">
+        Listado de alumnos
+    </h1>
+    <table class="table bordered" width="100%" cellSpacing="0">
+        <thead>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Ap. paterno</th>
+            <th>Ap. materno</th>
+            <th>Activo</th>
+            <th>Promedio</th>
+            <th>Acciones</th>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let a of alumnos">
+                <td>{{a.id}}</td>
+                <td>{{a.nombre}}</td>
+                <td>{{a.ap_paterno}}</td>
+                <td>{{a.ap_materno}}</td>
+                <td>{{a.activo}}</td>
+                <td>{{a.promedio}}</td>
+                <td>
+                    <button class="btn btn-info">detalles</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
